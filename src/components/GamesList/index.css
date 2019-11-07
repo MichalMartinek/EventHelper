@@ -1,0 +1,9 @@
+.game-list-container {
+    position: relative;
+    margin-top: 6em;
+}
+
+.game-list-list {
+    text-align: center;
+    padding: 0;
+}

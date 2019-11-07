@@ -9,6 +9,8 @@ import * as serviceWorker from './serviceWorker';
 
 import App from './scenes/App/App';
 import NotFound from './scenes/NotFound';
+import PreviousGames from "./scenes/PreviousGames";
+import UserView from "./scenes/UserView";
 
 const history = createBrowserHistory();
 
@@ -17,6 +19,8 @@ ReactDOM.render(
         <Router history={history}>
             <Switch>
                 <Route exact path="/" component={App} />
+                <Route path="/pastEvents" component={PreviousGames} />
+                <Route path="/userProfile" component={UserView} />
                 <Route component={NotFound} />
             </Switch>
         </Router>

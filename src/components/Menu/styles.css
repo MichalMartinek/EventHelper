@@ -1,0 +1,15 @@
+#menu-align-left {
+    margin-top: 1em;
+    margin-left: 0.5em;
+}
+
+#menu-button {
+    color: white;
+}
+
+
+.no-style-link {
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+}

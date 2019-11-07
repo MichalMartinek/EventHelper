@@ -1,8 +1,19 @@
 import React from 'react';
+import Header from "../../components/Header";
+import FutureGames from "./components/FutureGames";
 
 class Home extends React.Component {
+    componentDidMount() {
+
+    }
+
     render() {
-        return null;
+        return (
+            <div>
+                <Header title="Budoucí akce" />
+                <FutureGames />
+            </div>
+        );
     }
 }
 

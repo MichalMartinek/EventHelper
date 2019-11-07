@@ -1,0 +1,28 @@
+.main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: #661aff;
+}
+
+.block {
+    margin-block-start: 2em;
+    margin-right: 2em;
+}
+
+#add-button {
+    margin: 1em;
+    color: white;
+    background-color: black;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 1em;
+    margin-left: -3.5em;
+    color: white
+}

@@ -89,7 +89,7 @@ const mapStateToProps = state => ({
 
 function mapDispatchToProps(dispatch) {
     return {
-        actions: bindActionCreators(dispatch, actions),
+        actions: bindActionCreators(actions, dispatch),
     }
 }
 

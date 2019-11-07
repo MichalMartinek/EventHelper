@@ -6,6 +6,7 @@ import * as userActions from '../UserView/actions';
 
 import AuthorizationContext from '../../shared/context';
 import Login from '../Login/index';
+import Home from '../Home/index';
 
 import '../../App.css';
 
@@ -22,7 +23,7 @@ class App extends React.Component {
     }
 
     showScreen() {
-        return this.props.user.loggedIn ? null : ( <Login/> );
+        return this.props.user.loggedIn ? (<Home />) : ( <Login/> );
     }
 
     render() {
