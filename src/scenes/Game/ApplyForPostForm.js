@@ -5,6 +5,7 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControl from "@material-ui/core/FormControl";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
+import {Add} from "@material-ui/icons";
 
 
 class ApplyForPostForm extends React.Component {
@@ -54,7 +55,7 @@ class ApplyForPostForm extends React.Component {
                     </RadioGroup>
                 </FormControl>
 
-                <Button variant="contained" color="primary" onClick={this.onSubmit}>
+                <Button startIcon={<Add/>} variant="contained" color="primary" onClick={this.onSubmit}>
                     Přihlásit se na akci
                 </Button>
 
