@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
 import './index.css'
-
+import ApplyForPostForm from "./ApplyForPostForm";
 
 import * as actions from './actions';
 
@@ -17,15 +17,6 @@ class Game extends React.Component {
         console.log('po fetchgames');
     }
 
-    forAllPosts(post, index) {
-        return(
-            <div key={index}>
-                <input type="radio"/>
-                <label>{post}</label>
-            </div>
-        )
-    }
-
     render() {
         console.log(this.props);
         return (
@@ -33,7 +24,7 @@ class Game extends React.Component {
                 <Header title="Zápas"/>
                 <div className="game-container">
                     <h2>{this.props.actualGame.home_team} vs. {this.props.actualGame.visitor_team}</h2>
-                    <img src="/u183.png" className="game-detail-img"/>
+                    <img src={this.props.actualGame.img} className="game-detail-img"/>
                     <p>{this.props.actualGame.description}</p>
                     <div className="game-detail-parameter-container">
                     {this.props.actualGame.place}<br/>
@@ -42,10 +33,7 @@ class Game extends React.Component {
                     {this.props.actualGame.organizer} <br/>
                     </div>
                     <h3>Přihlásit se na akci</h3>
-                    <form>
-                        {this.props.actualGame.freePosts.map(this.forAllPosts)}
-                        <button type="submit">Přihlásit se na akci</button>
-                    </form>
+                    <ApplyForPostForm game={this.props.actualGame}/>
                 </div>
             </div>
         );
@@ -64,6 +52,7 @@ const mapStateToProps = state => ({
         description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
         salary: 100,
         organizer: 'BC Sparta Praha',
+        img: '/u183.png',
         freePosts: [
             'Uklízeč',
             'Výčepní',

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GamesList/GameComponent/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GamesList/GameComponent/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,7 @@
       <workItem from="1572805932918" duration="9415000" />
       <workItem from="1572963242558" duration="15696000" />
       <workItem from="1573140373389" duration="509000" />
-      <workItem from="1573644937246" duration="10526000" />
+      <workItem from="1573644937246" duration="12757000" />
     </task>
     <servers />
   </component>
