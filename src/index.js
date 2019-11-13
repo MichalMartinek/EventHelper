@@ -12,6 +12,8 @@ import NotFound from './scenes/NotFound';
 import PreviousGames from "./scenes/PreviousGames";
 import UserView from "./scenes/UserView";
 import Game from "./scenes/Game";
+import Login from "./scenes/Login";
+import Registration from "./scenes/Registration";
 
 const history = createBrowserHistory();
 const store  = initStore(history);
@@ -24,6 +26,8 @@ ReactDOM.render(
                 <Route path="/game/:id" component={Game} />
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
+                <Route path="/login" component={Login} />
+                <Route path="/registration" component={Registration} />
                 <Route component={NotFound} />
             </Switch>
         </Router>
