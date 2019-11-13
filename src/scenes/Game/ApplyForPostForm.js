@@ -1,5 +1,11 @@
 import React from "react";
 
+import Button from "@material-ui/core/Button";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControl from "@material-ui/core/FormControl";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+
 
 class ApplyForPostForm extends React.Component {
 
@@ -35,20 +41,23 @@ class ApplyForPostForm extends React.Component {
 
     forAllPosts(post, index){
         return (
-            <div key={index}>
-                <label>
-                    <input type="radio" name="post" onChange={this.onPostChange} value={post} />
-                    {post}
-                </label>
-            </div>
+            <FormControlLabel key={index} value={post} control={<Radio />} label={post} />
         )
     }
 
     render() {
         return (
-            <form onSubmit={this.onSubmit}>
-                    {this.props.game.freePosts.map(this.forAllPosts)}
-                    <input type="submit" value="Přihlásit se na akci"/>
+            <form>
+                <FormControl component="fieldset">
+                    <RadioGroup name="post" onChange={this.onPostChange}>
+                        {this.props.game.freePosts.map(this.forAllPosts)}
+                    </RadioGroup>
+                </FormControl>
+
+                <Button variant="contained" color="primary" onClick={this.onSubmit}>
+                    Přihlásit se na akci
+                </Button>
+
             </form>
         );
     }

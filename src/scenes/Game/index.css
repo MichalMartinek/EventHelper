@@ -1,6 +1,8 @@
 .game-container {
     position: relative;
-    margin-top: 6em;
+    margin: 6em auto 0 auto;
+    flex-direction: column;
+    max-width: 280px;
 }
 
 
@@ -8,7 +10,7 @@
     width:  6rem;
     height: 6rem;
     float: left;
-    margin: 0 1rem 1rem 1rem;
+    margin: 0 1rem 1rem 0;
 }
 
 .game-detail-parameter-container{
