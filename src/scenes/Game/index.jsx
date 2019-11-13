@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
 import './index.css'
-import ApplyForPostForm from "./ApplyForPostForm";
+import ApplyForPostForm from "./components/ApplyForPostForm/ApplyForPostForm";
 import {Money, AccessTime, Person, MyLocation} from "@material-ui/icons";
 import * as actions from './actions';
 
@@ -32,7 +32,6 @@ class Game extends React.Component {
                         <li><Person/>{this.props.actualGame.organizer}</li>
                         <li><Money/>{this.props.actualGame.salary} Kč/h</li>
                     </ul>
-                    <h3>Přihlásit se na akci</h3>
                     <ApplyForPostForm game={this.props.actualGame}/>
                 </div>
             </div>

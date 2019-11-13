@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/ApplyForPostForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/ApplyForPostForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +46,11 @@
       <recent name="$PROJECT_DIR$/src/scenes/GameDetail" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/scenes/Home/components" />
       <recent name="$PROJECT_DIR$/src/scenes/Login" />
       <recent name="$PROJECT_DIR$/src/scenes/App" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -78,7 +78,7 @@
       <workItem from="1572805932918" duration="9415000" />
       <workItem from="1572963242558" duration="15696000" />
       <workItem from="1573140373389" duration="509000" />
-      <workItem from="1573644937246" duration="16646000" />
+      <workItem from="1573644937246" duration="17210000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import {Add} from "@material-ui/icons";
 
+import './index.css';
 
 class ApplyForPostForm extends React.Component {
 
@@ -23,13 +24,13 @@ class ApplyForPostForm extends React.Component {
 
     }
 
-    onPostChange(e){
+    onPostChange(e) {
         this.setState({post: e.target.value});
     }
 
     onSubmit(e) {
         e.preventDefault();
-        if(this.state.post === null){
+        if (this.state.post === null) {
             alert(
                 'Musíte nejdříve zvolit pozici'
             );
@@ -40,24 +41,28 @@ class ApplyForPostForm extends React.Component {
         alert('Todo: pridano ' + this.state.post);
     }
 
-    forAllPosts(post, index){
+    forAllPosts(post, index) {
         return (
-            <FormControlLabel key={index} value={post} control={<Radio />} label={post} />
+            <FormControlLabel key={index} value={post} control={<Radio/>} label={post}/>
         )
     }
 
     render() {
         return (
             <form>
+                <h3 className="form-heading">Přihlásit se na akci</h3>
                 <FormControl component="fieldset">
                     <RadioGroup name="post" onChange={this.onPostChange}>
                         {this.props.game.freePosts.map(this.forAllPosts)}
                     </RadioGroup>
                 </FormControl>
 
-                <Button startIcon={<Add/>} variant="contained" color="primary" onClick={this.onSubmit}>
-                    Přihlásit se na akci
-                </Button>
+                <div className="btn-wrapper">
+                    <Button startIcon={<Add/>} variant="contained" color="primary"
+                            onClick={this.onSubmit}>
+                        Poslat přihlášku
+                    </Button>
+                </div>
 
             </form>
         );
