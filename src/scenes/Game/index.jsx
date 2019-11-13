@@ -26,12 +26,12 @@ class Game extends React.Component {
                     <h2>{this.props.actualGame.home_team} vs. {this.props.actualGame.visitor_team}</h2>
                     <img src={this.props.actualGame.img} className="game-detail-img"/>
                     <p>{this.props.actualGame.description}</p>
-                    <div className="game-detail-parameter-container">
-                    <MyLocation/>{this.props.actualGame.place}<br/>
-                    <AccessTime/>{this.props.actualGame.time}<br/>
-                    <Money/>{this.props.actualGame.salary} Kč/h<br/>
-                    <Person/>{this.props.actualGame.organizer} <br/>
-                    </div>
+                    <ul className="game-detail-parameter-container">
+                        <li><MyLocation/>{this.props.actualGame.place}</li>
+                        <li><AccessTime/>{this.props.actualGame.time}</li>
+                        <li><Person/>{this.props.actualGame.organizer}</li>
+                        <li><Money/>{this.props.actualGame.salary} Kč/h</li>
+                    </ul>
                     <h3>Přihlásit se na akci</h3>
                     <ApplyForPostForm game={this.props.actualGame}/>
                 </div>

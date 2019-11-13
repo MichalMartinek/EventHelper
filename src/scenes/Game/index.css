@@ -5,7 +5,6 @@
     max-width: 280px;
 }
 
-
 .game-detail-img {
     width:  6rem;
     height: 6rem;
@@ -15,4 +14,20 @@
 
 .game-detail-parameter-container{
     clear: both;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.4rem;
 }
+
+.game-detail-parameter-container li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+.game-detail-parameter-container li svg{
+    margin-right: 0.5rem;
+}
+
+
