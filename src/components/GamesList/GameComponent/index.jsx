@@ -11,7 +11,6 @@ import './index.css';
 class GameComponent extends React.Component {
     handleClick = () => {
         console.log("Clicking");
-        this.props.actions.fetchGame(this.props.game);
         this.props.push(`/game/${this.props.game.id}`);
     };
 

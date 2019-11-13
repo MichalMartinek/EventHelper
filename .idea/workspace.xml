@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GamesList/GameComponent/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GamesList/GameComponent/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/futureGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/futureGames.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/reducer.js" afterDir="false" />
     </list>

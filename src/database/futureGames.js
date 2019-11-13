@@ -11,6 +11,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -25,6 +26,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -44,6 +46,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -59,6 +62,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -78,6 +82,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -97,6 +102,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -116,6 +122,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
@@ -131,6 +138,7 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
+                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',

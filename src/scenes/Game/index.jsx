@@ -7,13 +7,13 @@ import ApplyForPostForm from "./components/ApplyForPostForm/ApplyForPostForm";
 import {Money, AccessTime, Person, MyLocation} from "@material-ui/icons";
 import * as actions from './actions';
 import AppliedInfo from "./components/AppliedInfo";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
 
 class Game extends React.Component {
 
     componentDidMount() {
-        //this.props.actions.fetchGame(futureGames);
-        console.log('po fetchgames');
+        this.props.actions.fetchGame(this.props.match.params.id);
     }
 
     applicationComponent = () => {
@@ -28,7 +28,11 @@ class Game extends React.Component {
     };
 
     render() {
-        console.log(this.props);
+        if(this.props.actualGame === null){
+            return (
+                <CircularProgress color="primary" />
+            )
+        }
         return (
             <div>
                 <Header title="Zápas"/>

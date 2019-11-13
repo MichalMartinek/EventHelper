@@ -1,7 +1,7 @@
 import * as types from './actionTypes';
 
-export const fetchGame = (item) => ({
+export const fetchGame = (id) => ({
     type: types.FETCH_GAME,
-    item,
+    id,
 });
 
