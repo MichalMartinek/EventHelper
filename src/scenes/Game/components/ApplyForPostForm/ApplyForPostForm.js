@@ -7,7 +7,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import {Add} from "@material-ui/icons";
 
-import './index.css';
+import '../../index.css';
 
 class ApplyForPostForm extends React.Component {
 

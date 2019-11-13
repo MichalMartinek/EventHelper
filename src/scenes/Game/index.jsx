@@ -6,6 +6,7 @@ import './index.css'
 import ApplyForPostForm from "./components/ApplyForPostForm/ApplyForPostForm";
 import {Money, AccessTime, Person, MyLocation} from "@material-ui/icons";
 import * as actions from './actions';
+import AppliedInfo from "./components/AppliedInfo";
 
 import { futureGames } from "../../database/futureGames";
 
@@ -16,6 +17,17 @@ class Game extends React.Component {
         this.props.actions.fetchGame(futureGames);
         console.log('po fetchgames');
     }
+
+    applicationComponent = () => {
+        if(this.props.applied){
+            return (
+                <AppliedInfo post={this.props.post}/>
+            )
+        }
+        return (
+            <ApplyForPostForm game={this.props.actualGame}/>
+            );
+    };
 
     render() {
         console.log(this.props);
@@ -32,7 +44,7 @@ class Game extends React.Component {
                         <li><Person/>{this.props.actualGame.organizer}</li>
                         <li><Money/>{this.props.actualGame.salary} Kč/h</li>
                     </ul>
-                    <ApplyForPostForm game={this.props.actualGame}/>
+                    {this.applicationComponent()}
                 </div>
             </div>
         );
@@ -57,6 +69,8 @@ const mapStateToProps = state => ({
             'Výčepní',
         ]
     },
+    post: 'Výčepní',
+    applied: true
 });
 
 function mapDispatchToProps(dispatch) {
