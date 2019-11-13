@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from "redux";
 import './index.css'
 import ApplyForPostForm from "./ApplyForPostForm";
-
+import {Money, AccessTime, Person, MyLocation} from "@material-ui/icons";
 import * as actions from './actions';
 
 
@@ -25,10 +25,10 @@ class Game extends React.Component {
                     {/*<img src={this.props.actualGame.img} className="game-detail-img"/>
                     <p>{this.props.actualGame.description}</p>
                     <div className="game-detail-parameter-container">
-                    {this.props.actualGame.place}<br/>
-                    {this.props.actualGame.time}<br/>
-                    {this.props.actualGame.salary} Kč/h<br/>
-                    {this.props.actualGame.organizer} <br/>
+                    <MyLocation/>{this.props.actualGame.place}<br/>
+                    <AccessTime/>{this.props.actualGame.time}<br/>
+                    <Money/>{this.props.actualGame.salary} Kč/h<br/>
+                    <Person/>{this.props.actualGame.organizer} <br/>
                     </div>
                     <h3>Přihlásit se na akci</h3>
                     <ApplyForPostForm game={this.props.actualGame}/>*/}
