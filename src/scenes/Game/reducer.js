@@ -1,7 +1,7 @@
 import * as types from "./actionTypes";
 
 export const initialState = {
-    actualGame: 'default',
+    actualGame: null,
 }
 
 export default (state = initialState, action) => {

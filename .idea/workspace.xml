@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/ApplyForPostForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/ApplyForPostForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/futureGames.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/futureGames.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/reducer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,16 +43,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/scenes/Game" />
-      <recent name="$PROJECT_DIR$/src/scenes/GameDetail" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/scenes/Home/components" />
       <recent name="$PROJECT_DIR$/src/scenes/Login" />
       <recent name="$PROJECT_DIR$/src/scenes/App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/scenes/Game" />
+      <recent name="$PROJECT_DIR$/src/scenes/GameDetail" />
     </key>
   </component>
   <component name="RunDashboard">

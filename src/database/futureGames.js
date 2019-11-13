@@ -8,6 +8,13 @@ export const futureGames = [
                 visitor_team: 'BC Sparta Praha',
                 place: 'Pod juliskou 4',
                 time: '10:30',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
             {
                 id: 2,
@@ -15,6 +22,13 @@ export const futureGames = [
                 visitor_team: 'BK JIP Pardubice',
                 place: 'SC Nymburk',
                 time: '18:00',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             }
         ],
     },
@@ -27,6 +41,13 @@ export const futureGames = [
                 visitor_team: 'Basketball USK Praha',
                 place: 'SC Nymburk',
                 time: '12:00',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
             {
                 id: 4,
@@ -35,6 +56,13 @@ export const futureGames = [
                 place: 'Sportovní hala Folimanka',
                 time: '16:00',
                 date: '14.10.2019',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             }
         ],
     },
@@ -47,6 +75,13 @@ export const futureGames = [
                 visitor_team: 'Basketball USK Praha',
                 place: 'Hala Vodova, KP',
                 time: '12:00',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
         ],
     },
@@ -59,6 +94,13 @@ export const futureGames = [
                 visitor_team: 'BC Sparta Praha',
                 place: 'SC Nymburk',
                 time: '17:00',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
         ],
     },
@@ -71,6 +113,13 @@ export const futureGames = [
                 visitor_team: 'Basketball USK Praha',
                 place: 'Sportovní hala Folimanka',
                 time: '18:00',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
             {
                 id: 8,
@@ -79,6 +128,13 @@ export const futureGames = [
                 place: 'Hala Vodova, KP',
                 time: '19:00',
                 date: '17.10.2019',
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
+                salary: 100,
+                organizer: 'BC Sparta Praha',
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ]
             },
         ],
     },

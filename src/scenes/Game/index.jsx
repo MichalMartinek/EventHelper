@@ -34,7 +34,7 @@ class Game extends React.Component {
                 <Header title="Zápas"/>
                 <div className="game-container">
                     <h2>{this.props.actualGame.home_team} vs. {this.props.actualGame.visitor_team}</h2>
-                    {/*<img src={this.props.actualGame.img} className="game-detail-img"/>
+                    <img src={this.props.actualGame.img} className="game-detail-img"/>
                     <p>{this.props.actualGame.description}</p>
                     <ul className="game-detail-parameter-container">
                         <li><MyLocation/>{this.props.actualGame.place}</li>
@@ -42,7 +42,7 @@ class Game extends React.Component {
                         <li><Person/>{this.props.actualGame.organizer}</li>
                         <li><Money/>{this.props.actualGame.salary} Kč/h</li>
                     </ul>
-                    {this.applicationComponent()}*/}
+                    {this.applicationComponent()}
                 </div>
             </div>
         );
@@ -52,7 +52,7 @@ class Game extends React.Component {
 const mapStateToProps = state => ({
     actualGame: state.games.game.actualGame,
     post: 'Výčepní',
-    applied: true
+    applied: false
 });
 
 function mapDispatchToProps(dispatch) {

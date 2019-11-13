@@ -6,10 +6,6 @@ import {Add} from "@material-ui/icons";
 import '../../index.css';
 
 class AppliedInfo extends React.Component{
-
-
-
-
     render() {
         return (
           <div>
