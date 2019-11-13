@@ -8,6 +8,9 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 import {Add} from "@material-ui/icons";
 
 import '../../index.css';
+import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
+import * as actions from "../../actions";
 
 class ApplyForPostForm extends React.Component {
 
@@ -37,8 +40,8 @@ class ApplyForPostForm extends React.Component {
             return;
         }
 
-        // Todo pridat do stavu
-        alert('Todo: pridano ' + this.state.post);
+        this.props.actions.applyForPost(this.props.game.id, this.state.post);
+        this.props.actions.getPost(this.props.game.id, this.state.post);
     }
 
     forAllPosts(post, index) {
@@ -70,5 +73,13 @@ class ApplyForPostForm extends React.Component {
 
 }
 
+const mapStateToProps = state => ({
+});
 
-export default ApplyForPostForm;
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(actions, dispatch),
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ApplyForPostForm)

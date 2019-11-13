@@ -9,7 +9,7 @@ class AppliedInfo extends React.Component{
     render() {
         return (
           <div>
-              <h3>Přihláška již byla odeslána</h3>
+              <h3>Přihláškabyla odeslána</h3>
               <ul>
                   <li>
                       Přihláška na pozici: {this.props.post}

@@ -5,3 +5,13 @@ export const fetchGame = (id) => ({
     id,
 });
 
+export const getPost = (gameId) => ({
+    type: types.GET_POST,
+    gameId,
+});
+
+export const applyForPost = (gameId, post) => ({
+    type: types.APPLY_FOR_POST,
+    gameId,
+    post
+});

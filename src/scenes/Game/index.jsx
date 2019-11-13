@@ -14,17 +14,18 @@ class Game extends React.Component {
 
     componentDidMount() {
         this.props.actions.fetchGame(this.props.match.params.id);
+        this.props.actions.getPost(this.props.match.params.id);
     }
 
     applicationComponent = () => {
-        if(this.props.applied){
+        if(this.props.post === null){
             return (
-                <AppliedInfo post={this.props.post}/>
-            )
+                <ApplyForPostForm game={this.props.actualGame}/>
+            );
         }
         return (
-            <ApplyForPostForm game={this.props.actualGame}/>
-            );
+            <AppliedInfo post={this.props.post}/>
+        )
     };
 
     render() {
@@ -55,8 +56,7 @@ class Game extends React.Component {
 
 const mapStateToProps = state => ({
     actualGame: state.games.game.actualGame,
-    post: 'Výčepní',
-    applied: false
+    post: state.games.game.post,
 });
 
 function mapDispatchToProps(dispatch) {
