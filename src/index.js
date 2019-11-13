@@ -11,6 +11,7 @@ import App from './scenes/App/App';
 import NotFound from './scenes/NotFound';
 import PreviousGames from "./scenes/PreviousGames";
 import UserView from "./scenes/UserView";
+import Game from "./scenes/Game";
 
 const history = createBrowserHistory();
 
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Router history={history}>
             <Switch>
                 <Route exact path="/" component={App} />
+                <Route path="/game/:id" component={Game} />
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
                 <Route component={NotFound} />

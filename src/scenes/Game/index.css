@@ -1,0 +1,16 @@
+.game-container {
+    position: relative;
+    margin-top: 6em;
+}
+
+
+.game-detail-img {
+    width:  6rem;
+    height: 6rem;
+    float: left;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.game-detail-parameter-container{
+    clear: both;
+}
