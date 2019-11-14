@@ -7,13 +7,28 @@ import '../../index.css';
 import {bindActionCreators} from "redux";
 import * as actions from "../../actions";
 import {connect} from "react-redux";
+import ConfirmationPopup from "../../../../components/ConfirmationPopUp/ConfirmationPopup";
 
 class AppliedInfo extends React.Component{
 
-    onCancel = (e) =>{
+    state = {
+        openModal: false,
+    };
+
+    cancelApplication = (e) =>{
         e.preventDefault();
         console.log('onCancel');
           this.props.actions.cancelApplication(this.props.game.id);
+    };
+
+    openModal = () => {
+        this.setState(Object.assign({}, this.state, {openModal: true}));
+
+    };
+
+    closeModal = () => {
+        this.setState(Object.assign({}, this.state, {openModal: false}));
+
     };
 
     render() {
@@ -31,10 +46,14 @@ class AppliedInfo extends React.Component{
 
               <div className="btn-wrapper">
                   <Button startIcon={<Close/>} variant="contained" color="primary"
-                          onClick={this.onCancel}>
+                          onClick={this.openModal}>
                       Zrušit přihlášku
                   </Button>
               </div>
+
+              <ConfirmationPopup open={this.state.openModal} onCancel={this.closeModal} onSuccess={this.cancelApplication}>
+                  Opravdu se chcete odhlásit?
+              </ConfirmationPopup>
           </div>
         );
     }

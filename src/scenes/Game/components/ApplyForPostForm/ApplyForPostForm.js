@@ -14,10 +14,13 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import * as actions from "../../actions";
 
+import ConfirmationPopup from "../../../../components/ConfirmationPopUp/ConfirmationPopup";
+
 class ApplyForPostForm extends React.Component {
 
     state = {
-        post: null
+        post: null,
+        openModal: false
     };
 
     constructor(props) {
@@ -30,7 +33,7 @@ class ApplyForPostForm extends React.Component {
     }
 
     onPostChange(e) {
-        this.setState({post: e.target.value});
+        this.setState(Object.assign({}, this.state, {post: e.target.value}));
     }
 
     onSubmit(e) {
@@ -42,9 +45,23 @@ class ApplyForPostForm extends React.Component {
             return;
         }
 
+        this.openModal();
+    }
+
+    apply = () => {
         this.props.actions.applyForPost(this.props.game.id, this.state.post);
         this.props.push('/applicationConfirmation');
-    }
+    };
+
+    openModal = () => {
+        this.setState(Object.assign({}, this.state, {openModal: true}));
+
+    };
+
+    closeModal = () => {
+        this.setState(Object.assign({}, this.state, {openModal: false}));
+
+    };
 
     forAllPosts(post, index) {
         return (
@@ -68,7 +85,12 @@ class ApplyForPostForm extends React.Component {
                         Poslat přihlášku
                     </Button>
                 </div>
-
+                <ConfirmationPopup
+                    open={this.state.openModal}
+                    onCancel={this.closeModal}
+                    onSuccess={this.apply}>
+                    <h3>Opravdu se chcete přihlásit?</h3>
+                </ConfirmationPopup>
             </form>
         );
     }
