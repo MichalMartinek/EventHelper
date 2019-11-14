@@ -1,5 +1,7 @@
 import React from "react";
 
+import { push } from 'react-router-redux';
+
 import Button from "@material-ui/core/Button";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
@@ -41,7 +43,7 @@ class ApplyForPostForm extends React.Component {
         }
 
         this.props.actions.applyForPost(this.props.game.id, this.state.post);
-        this.props.actions.getPost(this.props.game.id, this.state.post);
+        this.props.push('/applicationConfirmation');
     }
 
     forAllPosts(post, index) {
@@ -70,7 +72,6 @@ class ApplyForPostForm extends React.Component {
             </form>
         );
     }
-
 }
 
 const mapStateToProps = state => ({
@@ -79,6 +80,7 @@ const mapStateToProps = state => ({
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(actions, dispatch),
+        push: bindActionCreators(push, dispatch),
     };
 }
 
