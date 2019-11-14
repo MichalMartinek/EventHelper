@@ -4,21 +4,12 @@ import Button from "@material-ui/core/Button";
 import {Close} from "@material-ui/icons";
 
 import '../../index.css';
-import {bindActionCreators} from "redux";
-import * as actions from "../../actions";
-import {connect} from "react-redux";
-import ConfirmationPopup from "../../../../components/ConfirmationPopUp/ConfirmationPopup";
+import CancelApplication from "../../../../components/CancelApplication/CancelApplication";
 
 class AppliedInfo extends React.Component{
 
     state = {
         openModal: false,
-    };
-
-    cancelApplication = (e) =>{
-        e.preventDefault();
-        console.log('onCancel');
-          this.props.actions.cancelApplication(this.props.game.id);
     };
 
     openModal = () => {
@@ -50,24 +41,10 @@ class AppliedInfo extends React.Component{
                       Zrušit přihlášku
                   </Button>
               </div>
-
-              <ConfirmationPopup open={this.state.openModal} onCancel={this.closeModal} onSuccess={this.cancelApplication}>
-                  Opravdu se chcete odhlásit?
-              </ConfirmationPopup>
+              <CancelApplication open={this.state.openModal} id={this.props.game.id}/>
           </div>
         );
     }
 }
 
-
-
-const mapStateToProps = state => ({
-});
-
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(actions, dispatch),
-    };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(AppliedInfo)
+export default AppliedInfo
