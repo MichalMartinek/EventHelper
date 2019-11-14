@@ -6,32 +6,28 @@ import {connect} from "react-redux";
 import ConfirmationPopup from "../ConfirmationPopUp/ConfirmationPopup";
 
 
+class CancelApplicationModal extends React.Component {
 
-class CancelApplicationModal extends React.Component{
+    constructor(props) {
+        super(props);
+    }
 
-    props = {
-        successRedirect: '/',
-        id: null,
-        open: false
-    };
-
-    cancelApplication = (e) =>{
+    cancelApplication = (e) => {
         e.preventDefault();
         this.props.actions.cancelApplication(this.props.id);
         this.props.push(this.props.successRedirect);
     };
 
-    render(){
-      return(
-          <ConfirmationPopup open={this.props.open} onCancel={this.closeModal} onSuccess={this.cancelApplication}>
-              Opravdu se chcete odhlásit?
-          </ConfirmationPopup>
-      )
+    render() {
+        return (
+            <ConfirmationPopup open={this.props.open} onCancel={this.closeModal} onSuccess={this.cancelApplication}>
+                Opravdu se chcete odhlásit?
+            </ConfirmationPopup>
+        )
     }
 }
 
-const mapStateToProps = state => ({
-});
+const mapStateToProps = state => ({});
 
 function mapDispatchToProps(dispatch) {
     return {

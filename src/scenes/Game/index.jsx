@@ -24,7 +24,7 @@ class Game extends React.Component {
             );
         }
         return (
-            <AppliedInfo post={this.props.post} game={this.props.actualGame}/>
+            <AppliedInfo post={this.props.post} game={this.props.actualGame} status={this.props.status}/>
         )
     };
 
@@ -57,6 +57,7 @@ class Game extends React.Component {
 const mapStateToProps = state => ({
     actualGame: state.games.game.actualGame,
     post: state.games.game.post,
+    status: state.games.game.status,
 });
 
 function mapDispatchToProps(dispatch) {

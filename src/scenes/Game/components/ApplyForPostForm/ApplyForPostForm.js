@@ -49,7 +49,7 @@ class ApplyForPostForm extends React.Component {
     }
 
     apply = () => {
-        this.props.actions.applyForPost(this.props.game.id, this.state.post);
+        this.props.actions.applyForPost(this.props.game, this.state.post);
         this.props.push('/applicationConfirmation');
     };
 

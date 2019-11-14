@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import {Close} from "@material-ui/icons";
 
 import '../../index.css';
-import CancelApplication from "../../../../components/CancelApplication/CancelApplication";
+import CancelApplication from "../../../../components/CancelApplicationModal/CancelApplicationModal";
 
 class AppliedInfo extends React.Component{
 
@@ -31,7 +31,7 @@ class AppliedInfo extends React.Component{
                       Přihláška na pozici: {this.props.post}
                   </li>
                   <li>
-                      Stav přihlášky: <span>Čeká na vyřízení</span>
+                      Stav přihlášky: <span>{this.props.status}</span>
                   </li>
               </ul>
 

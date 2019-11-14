@@ -10,9 +10,9 @@ export const getPost = (gameId) => ({
     gameId,
 });
 
-export const applyForPost = (gameId, post) => ({
+export const applyForPost = (game, post) => ({
     type: types.APPLY_FOR_POST,
-    gameId,
+    game,
     post
 });
 
