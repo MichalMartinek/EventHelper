@@ -22,19 +22,19 @@ export default (state = initialState, action) => {
                 }
             }
             return state;
-        case types.GET_POST:
-            for(let i = 0; i < state.applications.length; i++){
-                if(state.applications[i].gameId == action.gameId){
+        case types.GET_POST: {
+            for (let i = 0; i < state.applications.length; i++) {
+                if (state.applications[i].gameId == action.gameId) {
                     return Object.assign({}, state, {post: state.applications[i].post});
                 }
 
             }
             return Object.assign({}, state, {post: null});
-
-        case types.APPLY_FOR_POST:
+        }
+        case types.APPLY_FOR_POST: {
             let newApplications = Array.from(state.applications);
-            for(let i = 0; i < newApplications.length; ++i){
-                if(newApplications[i].gameId == action.gameId){
+            for (let i = 0; i < newApplications.length; ++i) {
+                if (newApplications[i].gameId == action.gameId) {
                     newApplications[i].post = action.post;
                     return Object.assign({}, state, {applications: newApplications});
                 }
@@ -42,6 +42,19 @@ export default (state = initialState, action) => {
 
             newApplications.push({gameId: action.gameId, post: action.post});
             return Object.assign({}, state, {applications: newApplications});
+        }
+        case types.CANCEL_APPLICATION: {
+            let newApplications = Array.from(state.applications);
+            for (let i = 0; i < newApplications.length; ++i) {
+                if (newApplications[i].gameId == action.gameId) {
+                    newApplications.splice(i,1);
+                    return Object.assign({}, state, {applications: newApplications, post: null});
+                }
+            }
+
+            return state;
+        }
+
 
         default:
             return state;

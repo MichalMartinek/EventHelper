@@ -1,11 +1,21 @@
 import React from "react";
 
 import Button from "@material-ui/core/Button";
-import {Add} from "@material-ui/icons";
+import {Close} from "@material-ui/icons";
 
 import '../../index.css';
+import {bindActionCreators} from "redux";
+import * as actions from "../../actions";
+import {connect} from "react-redux";
 
 class AppliedInfo extends React.Component{
+
+    onCancel = (e) =>{
+        e.preventDefault();
+        console.log('onCancel');
+          this.props.actions.cancelApplication(this.props.game.id);
+    };
+
     render() {
         return (
           <div>
@@ -20,8 +30,8 @@ class AppliedInfo extends React.Component{
               </ul>
 
               <div className="btn-wrapper">
-                  <Button startIcon={<Add/>} variant="contained" color="primary"
-                          onClick={this.onSubmit}>
+                  <Button startIcon={<Close/>} variant="contained" color="primary"
+                          onClick={this.onCancel}>
                       Zrušit přihlášku
                   </Button>
               </div>
@@ -31,4 +41,14 @@ class AppliedInfo extends React.Component{
 }
 
 
-export default AppliedInfo;
+
+const mapStateToProps = state => ({
+});
+
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(actions, dispatch),
+    };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AppliedInfo)

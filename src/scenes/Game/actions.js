@@ -15,3 +15,8 @@ export const applyForPost = (gameId, post) => ({
     gameId,
     post
 });
+
+export const cancelApplication = (gameId) => ({
+    type: types.CANCEL_APPLICATION,
+    gameId,
+});

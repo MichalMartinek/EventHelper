@@ -24,7 +24,7 @@ class Game extends React.Component {
             );
         }
         return (
-            <AppliedInfo post={this.props.post}/>
+            <AppliedInfo post={this.props.post} game={this.props.actualGame}/>
         )
     };
 

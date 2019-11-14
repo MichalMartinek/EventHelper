@@ -5,7 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/actionTypes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/ApplyForPostForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm/ApplyForPostForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Game/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/reducer.js" afterDir="false" />
     </list>
