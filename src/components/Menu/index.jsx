@@ -39,8 +39,7 @@ class MenuClass extends React.Component {
         this.props.push('/');
     };
 
-
-    render() {
+    renderMenuTeam() {
         return (
             <div id="menu-align-left">
                 <IconButton id="menu-button" aria-controls="simple-menu" aria-haspopup="true" onClick={this.handleClick}>
@@ -59,9 +58,75 @@ class MenuClass extends React.Component {
                     <MenuItem onClick={this.logOutUser}><Link className="no-style-link" to='/'>Odhlásit se</Link></MenuItem>
                 </Menu>
             </div>
+        )
+    }
+
+    renderMenuUser() {
+        return (
+            <div id="menu-align-left">
+                <IconButton id="menu-button" aria-controls="simple-menu" aria-haspopup="true" onClick={this.handleClick}>
+                    <MenuIcon />
+                </IconButton>
+                <Menu
+                    id="simple-menu"
+                    anchorEl={this.state.anchorEl}
+                    keepMounted
+                    open={Boolean(this.state.anchorEl)}
+                    onClose={this.handleCloseMenu}
+                >
+                    <MenuItem><Link className="no-style-link" to="/">Hledat akce</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/signedActions">Přihlášené akce</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/pastActions">Proběhlé akce</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/userProfile">Můj profil</Link></MenuItem>
+                    <MenuItem onClick={this.logOutUser}><Link className="no-style-link" to='/'>Odhlásit se</Link></MenuItem>
+                </Menu>
+            </div>
+        );
+    }
+
+    renderMenuNonLogged() {
+        return (
+            <div id="menu-align-left">
+                <IconButton id="menu-button" aria-controls="simple-menu" aria-haspopup="true" onClick={this.handleClick}>
+                    <MenuIcon />
+                </IconButton>
+                <Menu
+                    id="simple-menu"
+                    anchorEl={this.state.anchorEl}
+                    keepMounted
+                    open={Boolean(this.state.anchorEl)}
+                    onClose={this.handleCloseMenu}
+                >
+                    <MenuItem><Link className="no-style-link" to="/">Domů</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/login">Přihlášení</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/registration">Registrace</Link></MenuItem>
+                </Menu>
+            </div>
+        );
+    }
+
+    renderMenus = () => {
+        if (this.props.user.loggedIn) {
+            if (this.props.user.profile === 'team') {
+                return this.renderMenuTeam();
+            }
+            return this.renderMenuUser();
+        }
+        return this.renderMenuNonLogged();
+    }
+
+    render() {
+        return (
+            <div>
+                {this.renderMenus()}
+            </div>
         );
     }
 }
+
+const mapStateToProps = state => ({
+    user: state.user,
+})
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -70,4 +135,4 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-export default connect(null, mapDispatchToProps)(MenuClass);
+export default connect(mapStateToProps, mapDispatchToProps)(MenuClass);

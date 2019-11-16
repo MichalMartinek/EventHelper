@@ -17,18 +17,31 @@ class Header extends React.Component {
         this.props.push('/addEvent');
     }
 
+    renderIcon = () => {
+        if (this.props.user.loggedIn && this.props.user.profile === 'team') {
+            return (
+                <Fab id="add-button" size="medium" color="primary" aria-label="add" onClick={(e) => this.addEvent(e)}>
+                    <AddIcon />
+                </Fab>
+            )
+        }
+        return (<div></div>);
+    }
+
     render() {
         return (
             <div className="main-header">
                 <MenuClass />
                 <h1 className="header-title">{this.props.title}</h1>
-                <Fab id="add-button" size="medium" color="primary" aria-label="add" onClick={(e) => this.addEvent(e)}>
-                    <AddIcon />
-                </Fab>
+                {this.renderIcon()}
             </div>
         );
     }
 }
+
+const mapStateToProps = state => ({
+    user: state.user,
+});
 
 function mapDispatchToProps(dispatch) {
     return {
@@ -36,4 +49,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Header);
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

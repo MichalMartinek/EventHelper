@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { Route, Router, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import './index.css';
-import store from './store';
+import initStore from './store';
 import * as serviceWorker from './serviceWorker';
 
 import App from './scenes/App/App';
@@ -12,8 +12,11 @@ import NotFound from './scenes/NotFound';
 import PreviousGames from "./scenes/PreviousGames";
 import UserView from "./scenes/UserView";
 import Game from "./scenes/Game";
+import Login from "./scenes/Login";
+import Registration from "./scenes/Registration";
 
 const history = createBrowserHistory();
+const store  = initStore(history);
 
 ReactDOM.render(
     <Provider store={store}>
@@ -23,6 +26,8 @@ ReactDOM.render(
                 <Route path="/game/:id" component={Game} />
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
+                <Route path="/login" component={Login} />
+                <Route path="/registration" component={Registration} />
                 <Route component={NotFound} />
             </Switch>
         </Router>
