@@ -1,5 +1,6 @@
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     max-width: 280px;
@@ -8,4 +9,37 @@
 
 .inputContainer {
     margin: 1rem 0 !important;
+}
+
+
+#button_login {
+    background-color: #661aff;
+}
+
+.profile {
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-bottom: 2px;
+}
+
+.active_profile {
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #661aff;
+    border-bottom: 1px solid #661aff;
+    padding-bottom: 0.7em;
+}
+
+.profile_wrapper {
+    position: relative;
+    margin-top: 6em;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.login_title {
+    text-align: center;
+    font-size: 2em;
 }

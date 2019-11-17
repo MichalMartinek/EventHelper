@@ -11,7 +11,7 @@ class Home extends React.Component {
         return (
             <div>
                 <Header title="Budoucí akce" />
-                <FutureGames />
+                {/*<FutureGames />*/}
             </div>
         );
     }

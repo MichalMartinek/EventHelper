@@ -1,0 +1,21 @@
+.content_wrapper {
+    position: relative;
+    margin-top: 6em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.event_helper_title {
+    font-size: 2em;
+}
+
+.event_helper_paragraph {
+    font-size: 1.4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#event_helper_button {
+    background-color: #661aff;
+    margin-right: 1em;
+}

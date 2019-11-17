@@ -13,6 +13,8 @@ import PreviousGames from "./scenes/PreviousGames";
 import UserView from "./scenes/UserView";
 import Game from "./scenes/Game";
 import ApplicationConfirmation from "./scenes/ApplicationConfirmation";
+import Login from "./scenes/Login";
+import Registration from "./scenes/Registration";
 
 const history = createBrowserHistory();
 const store  = initStore(history);
@@ -26,6 +28,8 @@ ReactDOM.render(
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
                 <Route path="/applicationConfirmation" component={ApplicationConfirmation} />
+                <Route path="/login" component={Login} />
+                <Route path="/registration" component={Registration} />
                 <Route component={NotFound} />
             </Switch>
         </Router>
