@@ -5,10 +5,15 @@ import { bindActionCreators } from "redux";
 import FutureGames from "./components/FutureGames";
 import FindGames from "./components/FindGames";
 
+import * as actions from '../Home/components/FutureGames/actions';
+
+import { futureGames } from "../../database/futureGames";
 
 class Home extends React.Component {
-    componentDidMount() {
-
+    componentWillMount() {
+        if (this.props.user.user.profile === 'user') {
+            this.props.actions.fetchFindGames(futureGames);
+        }
     }
 
     renderList = () => {
@@ -32,8 +37,14 @@ class Home extends React.Component {
 }
 
 
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(actions, dispatch),
+    }
+}
+
 const mapStateToProps = state => ({
     user: state.user,
 });
 
-export default connect(mapStateToProps, null)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Home);

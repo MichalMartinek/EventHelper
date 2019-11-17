@@ -23,10 +23,6 @@ class FindGames extends React.Component {
         this.handleFilter = this.handleFilter.bind(this);
     }
 
-    componentDidMount() {
-        this.props.actions.fetchFindGames(futureGames);
-    }
-
     handleFilter(games) {
         this.setState({
             activeList: games,
@@ -39,7 +35,7 @@ class FindGames extends React.Component {
               <Header title="Hledat akci" />
               <div className={style.container}>
                   <Filter games={this.props.games} callback={this.handleFilter}/>
-                  <ActionsList games={this.props.games}/>
+                  <ActionsList games={this.state.activeList}/>
               </div>
           </div>
         );

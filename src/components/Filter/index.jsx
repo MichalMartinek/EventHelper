@@ -13,20 +13,10 @@ class Filter extends React.Component {
     }
 
     handleChange = (e) => {
-        const tmpArr = {};
-
+        const tmpArr = [];
         this.props.games.forEach((game) => {
-            const tmp = [];
-            const tmpStruct = {};
-            game.forEach((detail) => {
-                if (detail.home_team.includes(e.target.value) || detail.visitor_team.includes(e.target.value)) {
-                    tmp.push(detail);
-                }
-            });
-            if (tmp.length > 0) {
-                tmpStruct.date = game.date;
-                tmpStruct.games = tmp;
-                tmpArr.push(tmpStruct);
+            if (game.home_team.toLowerCase().includes(e.target.value) || game.visitor_team.toLowerCase().includes(e.target.value)) {
+                tmpArr.push(game);
             }
         });
         this.setState({

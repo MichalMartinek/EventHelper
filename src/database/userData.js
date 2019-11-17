@@ -4,24 +4,26 @@ export const users = [
         profile: 'user',
         first_name: 'Luka',
         last_name: 'Lukasevic',
-        age: 23,
+        birthday: '29.3.1996',
         gender: 'M',
         city: 'Nymburk',
         email: 'l.lukasevic96@gmail.com',
         phone: '722076501',
         password: 'narnia',
+        image: "https://icon-library.net/images/default-user-icon/default-user-icon-4.jpg",
     },
     {
         id:2,
         profile: 'user',
         first_name: 'Tomas',
         last_name: 'Grofek',
-        age: 23,
+        birthday: '12.12.1996',
         gender: 'M',
         city: 'Olomouc',
         email: 'grofetom@fit.cvut.cz',
         phone: '720278718',
         password: 'test',
+        image: 'https://icon-library.net/images/default-user-icon/default-user-icon-4.jpg',
     }
     ];
 
