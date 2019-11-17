@@ -15,7 +15,27 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
+            },
+            {
+                id: 9,
+                home_team: 'Sparta Praha',
+                visitor_team: 'SK Slavia Praha',
+                place: 'Stadion Letná',
+                time: '18:00',
+                salary: 200,
+                positions : {
+                    available: ['uklízeč', 'podavač míčů'],
+                    unavailable: ['kontrola lístků', 'výčepní'],
+                },
+                sport: 'football',
+                image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201905/ball21.jpeg?EMXd5EiD_LhRjFKRbBGXvLH2ee41hcDm',
             },
             {
                 id: 2,
@@ -30,7 +50,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             }
         ],
     },
@@ -50,7 +76,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
             {
                 id: 4,
@@ -66,7 +98,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             }
         ],
     },
@@ -86,7 +124,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
         ],
     },
@@ -106,7 +150,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
         ],
     },
@@ -126,7 +176,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
             {
                 id: 8,
@@ -142,7 +198,13 @@ export const futureGames = [
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
-                ]
+                ],
+                positions : {
+                    available: ['uklízeč', 'zapisovatel'],
+                    unavailable: ['časoměřič', '24 sekund'],
+                },
+                sport: 'basketball',
+                image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
         ],
     },

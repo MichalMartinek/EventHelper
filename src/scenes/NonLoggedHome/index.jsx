@@ -15,7 +15,7 @@ class NonLoggedHome extends React.Component {
 
     hadnleRegistration = (e) => {
         e.preventDefault();
-        this.props.push('/regisration');
+        this.props.push('/registration');
     }
 
     render () {
