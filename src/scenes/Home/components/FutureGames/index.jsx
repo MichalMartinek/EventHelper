@@ -6,6 +6,7 @@ import * as actions from './actions';
 import GameList from "../../../../components/GamesList";
 
 import { futureGames } from "../../../../database/futureGames";
+import Header from "../../../../components/Header";
 
 class FutureGames extends React.Component {
     componentDidMount() {
@@ -15,6 +16,7 @@ class FutureGames extends React.Component {
     render() {
         return (
             <div>
+                <Header title="Budoucí akce" />
                 <GameList games={this.props.futureGames} />
             </div>
         );

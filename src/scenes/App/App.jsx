@@ -12,6 +12,15 @@ import '../../App.css';
 
 
 class App extends React.Component {
+    componentDidMount() {
+        if (localStorage) {
+            const user = localStorage.getItem('loggedUser');
+
+            if (user) {
+                this.props.actions.logIn(JSON.parse(user));
+            }
+        }
+    }
 
     showScreen() {
         return this.props.user.loggedIn ? (<Home />) : ( <NonLoggedHome /> );

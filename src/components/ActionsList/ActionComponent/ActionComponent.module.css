@@ -1,0 +1,58 @@
+.container {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    width: 100%;
+    text-align: left;
+    padding: 1em;
+}
+
+.title {
+    text-align: center;
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.positions {
+    width: 65%;
+    text-align: left;
+}
+
+.game_info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.button_more {
+    justify-content: center;
+    width: 30%;
+    height: auto;
+}
+
+.image {
+    width: 35%;
+    height: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
