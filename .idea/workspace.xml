@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ApplicationStatus/ApplicationStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ApplicationStatus/ApplicationStatus.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppliedGamesList/AppliedGame/AppliedGame.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppliedGamesList/AppliedGame/AppliedGame.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppliedGamesList/AppliedGame/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppliedGamesList/AppliedGame/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StepBack/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StepBack/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/components/AppliedInfo/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppliedGamesList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppliedGamesList/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +26,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/ApplicationStatus" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/AppliedGamesList" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -88,7 +83,7 @@
       <workItem from="1573644937246" duration="18415000" />
       <workItem from="1574025345139" duration="427000" />
       <workItem from="1574161028992" duration="1981000" />
-      <workItem from="1574172767142" duration="8235000" />
+      <workItem from="1574172767142" duration="8561000" />
     </task>
     <servers />
   </component>
