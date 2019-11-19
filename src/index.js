@@ -16,6 +16,7 @@ import ApplicationConfirmation from "./scenes/ApplicationConfirmation";
 import Login from "./scenes/Login";
 import Registration from "./scenes/Registration";
 import AppliedGames from "./scenes/AppliedGames";
+import GameMap from "./scenes/GameMap/GameMap";
 
 const history = createBrowserHistory();
 const store  = initStore(history);
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={App} />
                 <Route path="/game/:id" component={Game} />
+                <Route path="/map/:id" component={GameMap} />
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
                 <Route path="/appliedEvents" component={AppliedGames}/>
