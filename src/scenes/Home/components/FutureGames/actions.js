@@ -14,3 +14,8 @@ export const fetchFindGames = (item) => ({
    type: types.FETCH_FIND_GAMES,
    item,
 });
+
+export const fetchPastGames = (item) => ({
+    type: types.FETCH_PAST_GAMES,
+    item,
+});
