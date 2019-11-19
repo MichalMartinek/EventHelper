@@ -1,4 +1,7 @@
 import React from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import { push } from 'react-router-redux';
 
 import PlaceIcon from '@material-ui/icons/Place';
 import ScheduleIcon from '@material-ui/icons/Schedule';
@@ -9,6 +12,10 @@ import Button from "@material-ui/core/Button";
 import "./ActionComponent.module.css";
 
 class ActionComponent extends React.Component {
+    showDetail  = () => {
+        this.props.push(`/game/${this.props.game.id}`);
+    };
+
     render() {
         const {
             home_team,
@@ -17,7 +24,7 @@ class ActionComponent extends React.Component {
             time,
             salary,
             date,
-            positions,
+            freePosts,
             sport,
             image
         } = this.props.game;
@@ -30,7 +37,7 @@ class ActionComponent extends React.Component {
                   <div className={style.positions}>
                       <h3>Volné pozice</h3>
                       <ul>
-                          {positions.available.map((position) =>
+                          {freePosts.map((position) =>
                             <li>{position}</li>
                           )}
                       </ul>
@@ -56,6 +63,7 @@ class ActionComponent extends React.Component {
                       <Button
                           variant="contained"
                           color="primary"
+                          onClick={this.showDetail}
                       >
                           Více
                       </Button>
@@ -66,4 +74,10 @@ class ActionComponent extends React.Component {
     }
 }
 
-export default ActionComponent;
+function mapDispatchToProps(dispatch) {
+    return {
+        push: bindActionCreators(push, dispatch),
+    }
+}
+
+export default connect(null, mapDispatchToProps)(ActionComponent);

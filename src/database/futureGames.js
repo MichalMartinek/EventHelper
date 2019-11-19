@@ -11,15 +11,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
@@ -30,10 +25,10 @@ export const futureGames = [
                 place: 'Stadion Letná',
                 time: '18:00',
                 salary: 200,
-                positions : {
-                    available: ['uklízeč', 'podavač míčů'],
-                    unavailable: ['kontrola lístků', 'výčepní'],
-                },
+                freePosts: [
+                    'Uklízeč',
+                    'Výčepní',
+                ],
                 sport: 'football',
                 image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201905/ball21.jpeg?EMXd5EiD_LhRjFKRbBGXvLH2ee41hcDm',
             },
@@ -46,15 +41,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             }
@@ -72,15 +62,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
@@ -94,15 +79,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             }
@@ -120,15 +100,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
@@ -146,15 +121,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
@@ -172,15 +142,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
@@ -194,15 +159,10 @@ export const futureGames = [
                 description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
                 organizer: 'BC Sparta Praha',
-                img: '/u183.png',
                 freePosts: [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                positions : {
-                    available: ['uklízeč', 'zapisovatel'],
-                    unavailable: ['časoměřič', '24 sekund'],
-                },
                 sport: 'basketball',
                 image: 'http://mba.org.mt/wp-content/uploads/2015/12/basketball-wallpaper-1280x768-1180x768.jpg',
             },
