@@ -7,7 +7,6 @@ import styles from "./StepBack.module.css"
 class StepBack extends React.Component{
 
     handleBack = () => {
-        console.log(this.props);
         this.props.history.goBack();
     };
 

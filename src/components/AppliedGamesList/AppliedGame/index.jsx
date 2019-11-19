@@ -53,10 +53,10 @@ class AppliedGame extends React.Component {
                 <div>
                     <img className={style.image} src={this.props.application.game.image}/>
                     <ul className={style.game_info}>
-                        <li><MyLocation/>{this.props.application.game.place}</li>
-                        <li><AccessTime/>{this.props.application.game.time}</li>
-                        <li><Money/>{this.props.application.game.salary} Kč/h</li>
-                        <li>
+                        <li className={style.liVerticalCenter}><MyLocation/>{this.props.application.game.place}</li>
+                        <li className={style.liVerticalCenter}><AccessTime/>{this.props.application.game.time}</li>
+                        <li className={style.liVerticalCenter}><Money/>{this.props.application.game.salary} Kč/h</li>
+                        <li className={style.liStatus}>
                             {this.props.application.post}
                             -
                             <ApplicationStatus applicationStatus={this.props.application.status}/>

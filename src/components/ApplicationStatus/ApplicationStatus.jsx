@@ -4,6 +4,8 @@ import {ThumbUp, ThumbDown } from "@material-ui/icons";
 
 import * as statuses from "../../database/statuses";
 
+import styles from './ApplicationStatus.module.css'
+
 class ApplicationStatus extends React.Component{
 
     statusText(status){
@@ -32,7 +34,7 @@ class ApplicationStatus extends React.Component{
 
     render() {
         return(
-            <span>{this.statusText(this.props.applicationStatus)}{this.icon(this.props.applicationStatus)}</span>
+            <span className={styles.statusWrapper}>{this.statusText(this.props.applicationStatus)}{this.icon(this.props.applicationStatus)}</span>
         )
     }
 }
