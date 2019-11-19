@@ -40,6 +40,11 @@
     margin-bottom: 0;
 }
 
+.location{
+    text-decoration: underline;
+    color: blue;
+}
+
 ul{
     list-style-type: none;
     padding: 0;

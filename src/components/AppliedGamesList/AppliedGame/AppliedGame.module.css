@@ -1,0 +1,48 @@
+.applicationContainer {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    text-align: left;
+    padding: 1em;
+}
+
+.title {
+    text-align: center;
+    width: 90%;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.game_info {
+    margin: 0;
+    padding-left: 5px;
+    display: inline-block;
+    flex-direction: column;
+    width: 50%;
+}
+
+.image {
+    display: inline-block;
+    width: 45%;
+    height: auto;
+}
+
+.instructionsBtn{
+    float: right;
+}
+
+.appliedBtnWrapper{
+    margin-top: 1rem;
+}
+
+.liVerticalCenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.liStatus{
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+}

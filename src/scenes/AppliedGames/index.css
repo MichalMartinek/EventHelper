@@ -1,0 +1,5 @@
+.appliedGamesContainer {
+    position: relative;
+    margin: 6em auto 0 auto;
+    flex-direction: column;
+}

@@ -10,8 +10,7 @@ import {bindActionCreators} from "redux";
 class ApplicationConfirmation extends React.Component {
 
     goToApplicationList = () => {
-        alert('todo Redirect');
-        this.props.push('/');
+        this.props.push('/appliedEvents');
     };
 
     render() {

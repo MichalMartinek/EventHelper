@@ -20,7 +20,7 @@ class CancelApplicationModal extends React.Component {
 
     render() {
         return (
-            <ConfirmationPopup open={this.props.open} onCancel={this.closeModal} onSuccess={this.cancelApplication}>
+            <ConfirmationPopup open={this.props.open} onCancel={this.props.onCancel} onSuccess={this.cancelApplication}>
                 Opravdu se chcete odhlásit?
             </ConfirmationPopup>
         )

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Game/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +29,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scenes/Game" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Map" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -41,15 +44,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/scenes/GameMap" />
       <recent name="$PROJECT_DIR$/src/scenes/Game/components/ApplyForPostForm" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/scenes/Home/components" />
       <recent name="$PROJECT_DIR$/src/scenes/Login" />
-      <recent name="$PROJECT_DIR$/src/scenes/App" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/scenes/Game" />
-      <recent name="$PROJECT_DIR$/src/scenes/GameDetail" />
+      <recent name="$PROJECT_DIR$/src/components/Map" />
+      <recent name="$PROJECT_DIR$/src/components/AppliedGamesList" />
+      <recent name="$PROJECT_DIR$/src/components/ApplicationStatus" />
+      <recent name="$PROJECT_DIR$/src/components/StepBack" />
+      <recent name="$PROJECT_DIR$/src/components/AppliedGamesList/AppliedGame" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -79,6 +85,9 @@
       <workItem from="1573140373389" duration="509000" />
       <workItem from="1573644937246" duration="18415000" />
       <workItem from="1574025345139" duration="427000" />
+      <workItem from="1574161028992" duration="1981000" />
+      <workItem from="1574172767142" duration="9633000" />
+      <workItem from="1574190403392" duration="1163000" />
     </task>
     <servers />
   </component>

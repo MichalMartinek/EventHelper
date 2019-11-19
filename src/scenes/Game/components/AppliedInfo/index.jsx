@@ -5,6 +5,7 @@ import {Close} from "@material-ui/icons";
 
 import '../../index.css';
 import CancelApplication from "../../../../components/CancelApplicationModal/CancelApplicationModal";
+import ApplicationStatus from "../../../../components/ApplicationStatus/ApplicationStatus";
 
 class AppliedInfo extends React.Component{
 
@@ -25,13 +26,13 @@ class AppliedInfo extends React.Component{
     render() {
         return (
           <div>
-              <h3>Přihláškabyla odeslána</h3>
+              <h3>Přihláška byla odeslána</h3>
               <ul>
                   <li>
                       Přihláška na pozici: {this.props.post}
                   </li>
                   <li>
-                      Stav přihlášky: <span>{this.props.status}</span>
+                      Stav přihlášky: <ApplicationStatus applicationStatus={this.props.status}/>
                   </li>
               </ul>
 
@@ -41,7 +42,7 @@ class AppliedInfo extends React.Component{
                       Zrušit přihlášku
                   </Button>
               </div>
-              <CancelApplication open={this.state.openModal} id={this.props.game.id}/>
+              <CancelApplication onCancel={this.closeModal} open={this.state.openModal} id={this.props.game.id}/>
           </div>
         );
     }
