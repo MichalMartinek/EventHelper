@@ -8,6 +8,7 @@ import {Money, AccessTime, Person, MyLocation} from "@material-ui/icons";
 import * as actions from './actions';
 import AppliedInfo from "./components/AppliedInfo";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import StepBack from "../../components/StepBack";
 
 
 class Game extends React.Component {
@@ -38,6 +39,7 @@ class Game extends React.Component {
             <div>
                 <Header title="Zápas"/>
                 <div className="game-container">
+                    <StepBack/>
                     <h2>{this.props.actualGame.home_team} vs. {this.props.actualGame.visitor_team}</h2>
                     <img src={this.props.actualGame.image} className="game-detail-img"/>
                     <p>{this.props.actualGame.description}</p>

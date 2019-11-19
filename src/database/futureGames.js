@@ -8,8 +8,8 @@ export const futureGames = [
                 visitor_team: 'BC Sparta Praha',
                 place: 'Pod juliskou 4',
                 time: '10:30',
-                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 salary: 100,
+                description: 'Jedná se o mimořádný zápas mezi USK Praha a BC Spart. Potřebujeme uklízeče a 4 výčepní.',
                 organizer: 'BC Sparta Praha',
                 freePosts: [
                     'Uklízeč',
@@ -24,6 +24,8 @@ export const futureGames = [
                 visitor_team: 'SK Slavia Praha',
                 place: 'Stadion Letná',
                 time: '18:00',
+                description: 'Jedná se o mimořádný zápas. Potřebujeme uklízeče a 4 výčepní.',
+                organizer: 'BC Sparta Praha',
                 salary: 200,
                 freePosts: [
                     'Uklízeč',
