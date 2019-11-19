@@ -4,7 +4,9 @@ import * as statuses from "../../database/statuses"
 
 export const initialState = {
     actualGame: null,
-    applications: [],
+    applications: [
+
+    ],
     post: null
 };
 

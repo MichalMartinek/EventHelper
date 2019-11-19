@@ -15,6 +15,7 @@ import Game from "./scenes/Game";
 import ApplicationConfirmation from "./scenes/ApplicationConfirmation";
 import Login from "./scenes/Login";
 import Registration from "./scenes/Registration";
+import AppliedGames from "./scenes/AppliedGames";
 
 const history = createBrowserHistory();
 const store  = initStore(history);
@@ -27,6 +28,7 @@ ReactDOM.render(
                 <Route path="/game/:id" component={Game} />
                 <Route path="/pastEvents" component={PreviousGames} />
                 <Route path="/userProfile" component={UserView} />
+                <Route path="/appliedEvents" component={AppliedGames}/>
                 <Route path="/applicationConfirmation" component={ApplicationConfirmation} />
                 <Route path="/login" component={Login} />
                 <Route path="/registration" component={Registration} />

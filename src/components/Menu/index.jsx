@@ -75,7 +75,7 @@ class MenuClass extends React.Component {
                     onClose={this.handleCloseMenu}
                 >
                     <MenuItem><Link className="no-style-link" to="/">Hledat akce</Link></MenuItem>
-                    <MenuItem><Link className="no-style-link" to="/signedActions">Přihlášené akce</Link></MenuItem>
+                    <MenuItem><Link className="no-style-link" to="/appliedEvents">Přihlášené akce</Link></MenuItem>
                     <MenuItem><Link className="no-style-link" to="/pastActions">Proběhlé akce</Link></MenuItem>
                     <MenuItem><Link className="no-style-link" to="/userProfile">Můj profil</Link></MenuItem>
                     <MenuItem onClick={this.logOutUser}><Link className="no-style-link" to='/'>Odhlásit se</Link></MenuItem>
