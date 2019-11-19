@@ -8,11 +8,13 @@ import FindGames from "./components/FindGames";
 import * as actions from '../Home/components/FutureGames/actions';
 
 import { futureGames } from "../../database/futureGames";
+import { previousUserGames } from "../../database/previousUserGames";
 
 class Home extends React.Component {
     componentWillMount() {
         if (this.props.user.user.profile === 'user') {
             this.props.actions.fetchFindGames(futureGames);
+            this.props.actions.fetchPastGames(previousUserGames);
         }
     }
 

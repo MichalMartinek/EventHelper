@@ -1,6 +1,7 @@
 import React from "react";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
+import { push } from "react-router-redux";
 
 import * as actions from '../../actions';
 import Header from "../../../../components/Header";
@@ -8,6 +9,8 @@ import Header from "../../../../components/Header";
 import style from '../../UserView.module.css';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 
 import "../../UserView.module.css";
 
@@ -19,35 +22,47 @@ class UserProfile extends React.Component {
     }
 
     handleChangeFirstName(e) {
-
+        this.setState({
+            first_name: e.target.value,
+        });
     }
 
     handleChangeLastName(e) {
-
+        this.setState({
+            last_name: e.target.value,
+        });
     }
 
     handleChangeBirthday(e) {
-
+        this.setState({
+            birthday: e.target.value,
+        });
     }
 
     handleChangePhone(e) {
-
+        this.setState({
+            phone: e.target.value,
+        });
     }
 
     handleChangeEmail(e) {
-
+        this.setState({
+            email: e.target.value,
+        });
     }
 
     handleSave(e) {
-
+        this.props.actions.updateUser(this.state);
     }
 
     handleDecline(e) {
-
+        this.props.push('/');
     }
 
     changeGender(e) {
-
+        this.setState({
+            gender: e.target.value,
+        });
     }
 
     render () {
@@ -69,7 +84,7 @@ class UserProfile extends React.Component {
                 <Header title="Profil"/>
                 <div className={style.container}>
                     <h1>Můj profil</h1>
-                    <img src={image}/>
+                    <img className={style.user_image} src={image}/>
                     <TextField
                         className={style.inputContainer}
                         label="Křestní jméno"
@@ -115,21 +130,29 @@ class UserProfile extends React.Component {
                         value={phone}
                         onChange={(e) => this.handleChangePhone(e)}
                     />
+                    <h3>Pohlaví</h3>
                     <div className={style.gender}>
-                        <h3>Pohlaví</h3>
-                        <input
-                            type="checkbox"
-                            checked={gender === 'M'}
-                            name="male"
-                            value="M"
-                            onChange={(e) => this.changeGender(e)}
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={gender === 'M'}
+                                    onChange={(e) => this.changeGender(e)}
+                                    value="M"
+                                    color="primary"
+                                />
+                            }
+                            label="Muž"
                         />
-                        <input
-                            type="checkbox"
-                            checked={gender === 'F'}
-                            name="female"
-                            value="F"
-                            onChange={(e) => this.changeGender(e)}
+                        <FormControlLabel
+                            control={
+                                <Checkbox
+                                    checked={gender === 'F'}
+                                    onChange={(e) => this.changeGender(e)}
+                                    value="F"
+                                    color="primary"
+                                />
+                            }
+                            label="Žena"
                         />
                     </div>
                 </div>
@@ -163,6 +186,7 @@ const mapStateToProps = state => ({
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(actions, dispatch),
+        push: bindActionCreators(push, dispatch),
     }
 }
 
