@@ -37,8 +37,8 @@ class ActionComponent extends React.Component {
                   <div className={style.positions}>
                       <h3>Volné pozice</h3>
                       <ul>
-                          {freePosts.map((position) =>
-                            <li>{position}</li>
+                          {freePosts.map((position, index) =>
+                            <li key={index}>{position}</li>
                           )}
                       </ul>
                   </div>

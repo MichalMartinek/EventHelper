@@ -9,7 +9,7 @@ import * as serviceWorker from './serviceWorker';
 
 import App from './scenes/App/App';
 import NotFound from './scenes/NotFound';
-import PreviousGames from "./scenes/PreviousGames";
+import PreviousGames from "./scenes/Home/components/PreviousGames";
 import UserView from "./scenes/UserView";
 import Game from "./scenes/Game";
 import ApplicationConfirmation from "./scenes/ApplicationConfirmation";
@@ -17,6 +17,7 @@ import Login from "./scenes/Login";
 import Registration from "./scenes/Registration";
 import AppliedGames from "./scenes/AppliedGames";
 import GameMap from "./scenes/GameMap/GameMap";
+import PastGame from './scenes/PastGame';
 
 const history = createBrowserHistory();
 const store  = initStore(history);
@@ -29,6 +30,8 @@ ReactDOM.render(
                 <Route path="/game/:id" component={Game} />
                 <Route path="/map/:id" component={GameMap} />
                 <Route path="/pastEvents" component={PreviousGames} />
+                <Route path="/pastActions" component={PreviousGames} />
+                <Route path="/pastGame/:id" component={PastGame} />
                 <Route path="/userProfile" component={UserView} />
                 <Route path="/appliedEvents" component={AppliedGames}/>
                 <Route path="/applicationConfirmation" component={ApplicationConfirmation} />

@@ -11,6 +11,8 @@ export default (state = initialState, action) => {
             return Object.assign({}, state, { user: action.item, loggedIn: true });
         case types.LOG_OUT:
             return Object.assign({}, state, { user: null, loggedIn: false });
+        case types.UPDATE_USER:
+            return Object.assign({}, state, { user: action.item });
         default:
             return state;
     }

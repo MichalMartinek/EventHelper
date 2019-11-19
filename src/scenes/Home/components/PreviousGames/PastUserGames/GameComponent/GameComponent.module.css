@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.content_info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em;
+}
+
+.image {
+    margin: 0;
+    margin-right: 1em;
+    width: 100px;
+    height: auto;
+}
+
+#icon {
+    margin-right: 5px;
+}
+
+#icon_bad {
+    margin-left: 5px;
+    color: red;
+}
+
+#icon_good {
+    margin-left: 5px;
+    color: green;
+}

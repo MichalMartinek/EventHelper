@@ -7,6 +7,13 @@ export function logIn(item) {
     }
 }
 
+export function updateUser(item) {
+    return {
+        type: types.UPDATE_USER,
+        item,
+    }
+}
+
 export function logOut() {
     return {
         type: types.LOG_OUT,

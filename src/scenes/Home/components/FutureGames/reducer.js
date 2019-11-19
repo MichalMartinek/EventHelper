@@ -4,6 +4,7 @@ import {futureGames} from "../../../../database/futureGames";
 const initialState = {
     futureGames: [],
     findGames: [],
+    pastGames: [],
 };
 
 function justifyGames(games) {
@@ -27,6 +28,8 @@ export default (state = initialState, action) => {
             return Object.assign({}, state, { futureGames: state.futureGames.concat(action.item) });
         case types.FETCH_FIND_GAMES:
             return Object.assign({}, state, { findGames: justifyGames(action.item) });
+        case types.FETCH_PAST_GAMES:
+            return  Object.assign({}, state, { pastGames: action.item });
         default:
             return state;
     }
