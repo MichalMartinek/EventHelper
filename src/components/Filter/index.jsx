@@ -15,7 +15,8 @@ class Filter extends React.Component {
     handleChange = (e) => {
         const tmpArr = [];
         this.props.games.forEach((game) => {
-            if (game.home_team.toLowerCase().includes(e.target.value) || game.visitor_team.toLowerCase().includes(e.target.value)) {
+            let value = (e.target.value).toLowerCase();
+            if (game.home_team.toLowerCase().includes(value) || game.visitor_team.toLowerCase().includes(value)) {
                 tmpArr.push(game);
             }
         });
