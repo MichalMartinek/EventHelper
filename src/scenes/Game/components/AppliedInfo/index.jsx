@@ -42,6 +42,11 @@ class AppliedInfo extends React.Component{
                       Zrušit přihlášku
                   </Button>
               </div>
+              <br/>
+              <h3>Pokyny</h3>
+              <p>
+                  Dostavte se hodinu před začátkem události. V případě dotazů volejte na <a href="tel:+420111111111"> +420 111 222 333.</a>
+              </p>
               <CancelApplication onCancel={this.closeModal} open={this.state.openModal} id={this.props.game.id}/>
           </div>
         );
