@@ -33,7 +33,7 @@ export const futureGames = [
                     'Uklízeč',
                     'Výčepní',
                 ],
-                sport: 'football',
+                sport: 'fotbal',
                 image: 'https://akm-img-a-in.tosshub.com/indiatoday/images/story/201905/ball21.jpeg?EMXd5EiD_LhRjFKRbBGXvLH2ee41hcDm',
                 lng: 14.402080,
                 lat: 50.101476,

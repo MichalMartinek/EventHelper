@@ -26,6 +26,13 @@ class Login extends React.Component {
         };
     }
 
+    componentDidMount() {
+        console.log(this.props);
+        if(this.props.user.loggedIn){
+            this.props.push('/');
+        }
+    }
+
     handleChangeEmail = (e) => {
         this.setState({
             email: e.target.value,

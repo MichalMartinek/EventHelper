@@ -16,7 +16,19 @@ class Filter extends React.Component {
         const tmpArr = [];
         this.props.games.forEach((game) => {
             let value = (e.target.value).toLowerCase();
-            if (game.home_team.toLowerCase().includes(value) || game.visitor_team.toLowerCase().includes(value)) {
+            if (
+                game.home_team.toLowerCase().includes(value)
+                    ||
+                game.visitor_team.toLowerCase().includes(value)
+                    ||
+                game.place.toLowerCase().includes(value)
+                    ||
+                game.time.toLowerCase().includes(value)
+                    ||
+                game.organizer.toLowerCase().includes(value)
+                    ||
+                game.sport.toLowerCase().includes(value)
+            ) {
                 tmpArr.push(game);
             }
         });
@@ -24,7 +36,7 @@ class Filter extends React.Component {
             searchText: e.target.value,
         });
         this.props.callback(tmpArr);
-    }
+    };
 
     render() {
         return (
