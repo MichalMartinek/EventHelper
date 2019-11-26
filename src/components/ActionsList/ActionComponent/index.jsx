@@ -30,7 +30,7 @@ class ActionComponent extends React.Component {
         } = this.props.game;
 
         return (
-          <div className={style.container} key={this.props.index}>
+          <div className={style.container} key={this.props.index} onClick={this.showDetail}>
               <h2 className={style.title}>{home_team} vs {visitor_team}</h2>
               <div className={style.row}>
                   <img className={style.image} src={image} alt={sport}/>
@@ -63,7 +63,7 @@ class ActionComponent extends React.Component {
                       <Button
                           variant="contained"
                           color="primary"
-                          onClick={this.showDetail}
+                          // onClick={this.showDetail}
                       >
                           Více
                       </Button>
