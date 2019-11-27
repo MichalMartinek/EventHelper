@@ -5,6 +5,7 @@ const initialState = {
     futureGames: [],
     findGames: [],
     pastGames: [],
+    filterQuery: ''
 };
 
 function justifyGames(games) {
@@ -30,6 +31,9 @@ export default (state = initialState, action) => {
             return Object.assign({}, state, { findGames: justifyGames(action.item) });
         case types.FETCH_PAST_GAMES:
             return  Object.assign({}, state, { pastGames: action.item });
+        case types.SAVE_FILTER_QUERY: {
+            return Object.assign({}, state, {filterQuery: action.query})
+        }
         default:
             return state;
     }

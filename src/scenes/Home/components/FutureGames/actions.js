@@ -19,3 +19,7 @@ export const fetchPastGames = (item) => ({
     type: types.FETCH_PAST_GAMES,
     item,
 });
+export const saveFilterQuery = (query) => ({
+    type: types.SAVE_FILTER_QUERY,
+    query
+});

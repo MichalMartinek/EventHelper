@@ -23,10 +23,36 @@ class FindGames extends React.Component {
         this.handleFilter = this.handleFilter.bind(this);
     }
 
-    handleFilter(games) {
-        this.setState({
-            activeList: games,
+    handleFilter(query) {
+        this.props.actions.saveFilterQuery(query);
+        this.filterGames(query);
+    }
+
+    filterGames(query){
+        const tmpArr = [];
+        this.props.games.forEach((game) => {
+            let value = (query).toLowerCase();
+            if (
+                game.home_team.toLowerCase().includes(value)
+                ||
+                game.visitor_team.toLowerCase().includes(value)
+                ||
+                game.place.toLowerCase().includes(value)
+                ||
+                game.time.toLowerCase().includes(value)
+                ||
+                game.organizer.toLowerCase().includes(value)
+                ||
+                game.sport.toLowerCase().includes(value)
+            ) {
+                tmpArr.push(game);
+            }
         });
+        this.setState(Object.assign({}, this.state, {activeList: tmpArr}));
+    }
+
+    componentDidMount() {
+        this.filterGames(this.props.filterQuery);
     }
 
     render () {
@@ -34,7 +60,7 @@ class FindGames extends React.Component {
           <div>
               <Header title="Hledat akci" />
               <div className={style.container}>
-                  <Filter games={this.props.games} callback={this.handleFilter}/>
+                  <Filter callback={this.handleFilter} filterQuery={this.props.filterQuery}/>
                   <ActionsList games={this.state.activeList}/>
               </div>
           </div>
@@ -44,6 +70,7 @@ class FindGames extends React.Component {
 
 const mapStateToProps = (state) => ({
     games: state.games.futureGames.findGames,
+    filterQuery: state.games.futureGames.filterQuery,
 });
 
 function mapDispatchToProps(dispatch) {
