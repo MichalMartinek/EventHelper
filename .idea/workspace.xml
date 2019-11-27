@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Login/Login.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +38,7 @@
     <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
@@ -93,7 +91,7 @@
       <workItem from="1574233198162" duration="597000" />
       <workItem from="1574283399448" duration="61000" />
       <workItem from="1574791633726" duration="2113000" />
-      <workItem from="1574891805645" duration="1787000" />
+      <workItem from="1574891805645" duration="2933000" />
     </task>
     <servers />
   </component>

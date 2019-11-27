@@ -10,12 +10,17 @@ import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
 
 import './index.css';
+import {Person} from "@material-ui/icons";
 
 class Header extends React.Component {
     addEvent(e) {
         e.preventDefault();
         this.props.push('/addEvent');
     }
+
+    showUserProfile = () => {
+        this.props.push('/userProfile');
+    };
 
     renderIcon = () => {
         if (this.props.user.loggedIn && this.props.user.profile === 'team') {
@@ -25,8 +30,13 @@ class Header extends React.Component {
                 </Fab>
             )
         }
+        if(this.props.user.loggedIn){
+            return (
+                <Person className="loggedInIcon" onClick={this.showUserProfile}/>
+            );
+        }
         return (<div></div>);
-    }
+    };
 
     render() {
         return (

@@ -10,7 +10,7 @@
 # Druha iterace
 - [x] login na HP, odkaz z loginu na registraci
 - [x] login stranka redirect pro prihlasene uzivatele
-- [ ] jasna indicie, ze je clovek prihlaseny
+- [x] jasna indicie, ze je clovek prihlaseny
 - [ ] filtr na feedu - ukazovat ze vysledky jsou vyfiltrovane
 - [x] filtr pro dalsi atributy? napr mesta
 - [x] zachovat filtr po backu

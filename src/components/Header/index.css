@@ -26,3 +26,8 @@
     margin-left: -3.5em;
     color: white
 }
+.loggedInIcon{
+    color: white;
+    height: 4.3rem !important;
+    font-size: 3rem !important;
+}
