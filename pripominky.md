@@ -8,13 +8,13 @@
 - prihlasene akce serazene dle datumu
 
 # Druha iterace
-- login na HP, odkaz z loginu na registraci
-- login stranka redirect pro prihlasene uzivatele
-- jasna indicie, ze je clovek prihlaseny
-- filtr na feedu - ukazovat ze vysledky jsou vyfiltrovane
-- filtr pro dalsi atributy? napr mesta
-- zachovat filtr po backu
-- Opravdu se chcete prihlasit jako ....?
-- Jednotnost stylu v popup oknech
-- Probehle akce - hodnoceni - zmatecne napr Jeste neni k dispozici u nehodnocene akce
-- tlacitko vice - jedine misto na klikani
+- [x] login na HP, odkaz z loginu na registraci
+- [x] login stranka redirect pro prihlasene uzivatele
+- [ ] jasna indicie, ze je clovek prihlaseny
+- [ ] filtr na feedu - ukazovat ze vysledky jsou vyfiltrovane
+- [x] filtr pro dalsi atributy? napr mesta
+- [x] zachovat filtr po backu
+- [ ] Opravdu se chcete prihlasit jako ....?
+- [ ] Jednotnost stylu v popup oknech
+- [ ] Probehle akce - hodnoceni - zmatecne napr Jeste neni k dispozici u nehodnocene akce
+- [x] tlacitko vice - jedine misto na klikani
