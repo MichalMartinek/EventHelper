@@ -4,7 +4,6 @@ import { bindActionCreators } from "redux";
 
 import FutureGames from "./components/FutureGames";
 import FindGames from "./components/FindGames";
-
 import * as actions from '../Home/components/FutureGames/actions';
 
 import { futureGames } from "../../database/futureGames";

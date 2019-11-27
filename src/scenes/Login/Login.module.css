@@ -16,6 +16,13 @@
     background-color: #661aff;
 }
 
+#button_register {
+    color: #661aff;
+    border: solid 1px #661aff;
+    background-color: white;
+    margin-top: 1rem;
+}
+
 .profile {
     margin-left: 2em;
     margin-right: 2em;

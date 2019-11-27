@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filter/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Game/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Game/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Home/components/FindGames/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/components/FindGames/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/components/FutureGames/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Home/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Home/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Login/Login.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Login/Login.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Login/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1574233198162" duration="597000" />
       <workItem from="1574283399448" duration="61000" />
       <workItem from="1574791633726" duration="2113000" />
-      <workItem from="1574891805645" duration="909000" />
+      <workItem from="1574891805645" duration="1787000" />
     </task>
     <servers />
   </component>

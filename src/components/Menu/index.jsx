@@ -97,7 +97,7 @@ class MenuClass extends React.Component {
                     open={Boolean(this.state.anchorEl)}
                     onClose={this.handleCloseMenu}
                 >
-                    <MenuItem><Link className="no-style-link" to="/">Domů</Link></MenuItem>
+                    {/*<MenuItem><Link className="no-style-link" to="/">Domů</Link></MenuItem>*/}
                     <MenuItem><Link className="no-style-link" to="/login">Přihlášení</Link></MenuItem>
                     <MenuItem><Link className="no-style-link" to="/registration">Registrace</Link></MenuItem>
                 </Menu>

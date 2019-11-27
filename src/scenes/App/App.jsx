@@ -9,6 +9,7 @@ import NonLoggedHome from '../NonLoggedHome';
 import Home from '../Home/index';
 
 import '../../App.css';
+import Login from "../Login";
 
 
 class App extends React.Component {
@@ -23,7 +24,7 @@ class App extends React.Component {
     }
 
     showScreen() {
-        return this.props.user.loggedIn ? (<Home />) : ( <NonLoggedHome /> );
+        return this.props.user.loggedIn ? (<Home />) : ( <Login /> );
     }
 
     render() {

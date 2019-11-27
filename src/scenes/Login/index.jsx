@@ -71,6 +71,10 @@ class Login extends React.Component {
         });
     }
 
+    handleRegisterClick(){
+        this.props.push('/registration')
+    }
+
     render() {
         return (
             <div>
@@ -112,6 +116,14 @@ class Login extends React.Component {
                         onClick={(e) => this.handleLogin(e)}
                     >
                         Přihlásit se
+                    </Button>
+                    <Button
+                        id={style.button_register}
+                        variant="contained"
+                        color="primary"
+                        onClick={(e) => this.handleRegisterClick(e)}
+                    >
+                        Registrovat se
                     </Button>
                 </div>
             </div>
