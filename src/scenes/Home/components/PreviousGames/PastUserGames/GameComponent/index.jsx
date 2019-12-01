@@ -18,7 +18,7 @@ class GameComponent extends React.Component {
         if (this.props.rating === -2) {
             return (
                 <span style={{ color: 'darkGray', padding: "5px"}}>
-                    {this.props.position}  - Nehodnoceno
+                    {this.props.position}  - Zatím nehodnoceno
                 </span>
             );
         }
@@ -27,7 +27,6 @@ class GameComponent extends React.Component {
             return (
                 <span style={{ color: 'darkGray'}}>
                     {this.props.position} - Nedostavil se
-                    <ThumbDownIcon id={style.icon_bad}/>
                 </span>
             )
         }
@@ -35,7 +34,6 @@ class GameComponent extends React.Component {
         return (
             <span>
                 {this.props.position} - Hodnoceno
-                <ThumbUpIcon id={style.icon_good}/>
             </span>
         )
     };
@@ -77,28 +75,13 @@ class GameComponent extends React.Component {
                             color="primary"
                             onClick={(e) => this.handleShowRatingDetail(e)}
                         >
-                            Hodnocení
+                            Detail hodnocení
                         </Button>
                     </div>
                 ) : (
-                    <div className={style.footer}>
-                        <StarRatings
-                            rating={0}
-                            starRatedColor="black"
-                            numberOfStars={5}
-                            name="rating"
-                            starDimension="20px"
-                            starSpacing="2px"
-                        />
-                        <Button
-                            variant="contained"
-                            color="primary"
-                            disabled
-                        >
-                            Hodnocení
-                        </Button>
-                    </div>
-                )}
+                    <h3 style={{ color: 'darkGray', padding: '20px 0' }}>Nebyl hodnocen</h3>
+                    )
+                }
             </div>
         );
     }

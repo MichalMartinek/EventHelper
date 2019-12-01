@@ -7,6 +7,7 @@ import * as actions from '../FutureGames/actions';
 import Header from "../../../../components/Header";
 import Filter from "../../../../components/Filter";
 import ActionsList from "../../../../components/ActionsList";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 import style from './FindGames.module.css';
 
@@ -24,8 +25,12 @@ class FindGames extends React.Component {
     }
 
     handleFilter(query) {
+        this.props.actions.setFiltering(true);
         this.props.actions.saveFilterQuery(query);
         this.filterGames(query);
+        setTimeout(() => {
+            this.props.actions.setFiltering(false);
+        }, 500);
     }
 
     filterGames(query){
@@ -61,7 +66,11 @@ class FindGames extends React.Component {
               <Header title="Hledat akci" />
               <div className={style.container}>
                   <Filter callback={this.handleFilter} filterQuery={this.props.filterQuery}/>
-                  <ActionsList games={this.state.activeList}/>
+                  { this.props.filtering ? (
+                      <CircularProgress size="5em" style={{ margin: '40px auto'}}/>
+                  ) : (
+                      <ActionsList games={this.state.activeList}/>
+                  )}
               </div>
           </div>
         );
@@ -71,6 +80,7 @@ class FindGames extends React.Component {
 const mapStateToProps = (state) => ({
     games: state.games.futureGames.findGames,
     filterQuery: state.games.futureGames.filterQuery,
+    filtering: state.games.futureGames.filtering,
 });
 
 function mapDispatchToProps(dispatch) {

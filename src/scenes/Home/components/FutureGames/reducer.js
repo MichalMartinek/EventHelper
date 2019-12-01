@@ -1,11 +1,13 @@
 import * as types from './actionTypes';
 import {futureGames} from "../../../../database/futureGames";
 
+
 const initialState = {
     futureGames: [],
     findGames: [],
     pastGames: [],
-    filterQuery: ''
+    filterQuery: '',
+    filtering: false,
 };
 
 function justifyGames(games) {
@@ -31,9 +33,10 @@ export default (state = initialState, action) => {
             return Object.assign({}, state, { findGames: justifyGames(action.item) });
         case types.FETCH_PAST_GAMES:
             return  Object.assign({}, state, { pastGames: action.item });
-        case types.SAVE_FILTER_QUERY: {
-            return Object.assign({}, state, {filterQuery: action.query})
-        }
+        case types.SAVE_FILTER_QUERY:
+            return Object.assign({}, state, {filterQuery: action.query});
+        case types.SET_FILTERING:
+            return Object.assign({}, state, { filtering: action.item });
         default:
             return state;
     }
