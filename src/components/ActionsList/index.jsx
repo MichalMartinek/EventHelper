@@ -11,7 +11,7 @@ class ActionsList extends React.Component {
 
     render () {
         return (
-          <ul style={{ padding: 0 }}>
+          <ul style={{ padding: 0}}>
               {this.props.games.map(this.forAllGames)}
           </ul>
         );

@@ -23,3 +23,8 @@ export const saveFilterQuery = (query) => ({
     type: types.SAVE_FILTER_QUERY,
     query
 });
+
+export const setFiltering = item => ({
+    type: types.SET_FILTERING,
+    item,
+})
