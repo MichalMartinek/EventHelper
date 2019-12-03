@@ -11,48 +11,58 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
+import {  MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers';
 
 import "../../UserView.module.css";
+import DateFnsUtils from "@date-io/date-fns";
 
 class UserProfile extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = props.user.user;
+        this.state = {...props.user.user, changed: false};
     }
 
     handleChangeFirstName(e) {
         this.setState({
             first_name: e.target.value,
+            changed: true,
         });
     }
 
     handleChangeLastName(e) {
         this.setState({
             last_name: e.target.value,
+            changed: true,
         });
     }
 
     handleChangeBirthday(e) {
         this.setState({
-            birthday: e.target.value,
+            birthday: e,
+            changed: true,
         });
     }
 
     handleChangePhone(e) {
         this.setState({
             phone: e.target.value,
+            changed: true,
         });
     }
 
     handleChangeEmail(e) {
         this.setState({
             email: e.target.value,
+            changed: true,
         });
     }
 
     handleSave(e) {
         this.props.actions.updateUser(this.state);
+        this.setState({
+           changed: false,
+        });
     }
 
     handleDecline(e) {
@@ -62,6 +72,7 @@ class UserProfile extends React.Component {
     changeGender(e) {
         this.setState({
             gender: e.target.value,
+            changed: true,
         });
     }
 
@@ -103,15 +114,21 @@ class UserProfile extends React.Component {
                         value={last_name}
                         onChange={(e) => this.handleChangeLastName(e)}
                     />
-                    <TextField
-                        className={style.inputContainer}
-                        label="Datum narození"
-                        type="text"
-                        name="birthday"
-                        variant="outlined"
-                        value={birthday}
-                        onChange={(e) => this.handleChangeBirthday(e)}
-                    />
+                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                        <KeyboardDatePicker
+                            margin="normal"
+                            variant="outlined"
+                            id="date-picker-dialog"
+                            label="Datum narození"
+                            format="MM/dd/yyyy"
+                            defaultValue="1996-03-29"
+                            value={birthday}
+                            onChange={(e) => this.handleChangeBirthday(e)}
+                            KeyboardButtonProps={{
+                                'aria-label': 'change date',
+                            }}
+                        />
+                    </MuiPickersUtilsProvider>
                     <TextField
                         className={style.inputContainer}
                         label="Email"
@@ -170,6 +187,8 @@ class UserProfile extends React.Component {
                         variant="contained"
                         color="primary"
                         onClick={(e) => this.handleSave(e)}
+                        disabled={!this.state.changed}
+                        style={{ background: this.state.changed ? 'green' : 'darkgray' }}
                     >
                         Uložit
                     </Button>

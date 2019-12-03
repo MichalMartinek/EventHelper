@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/App/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scenes/Registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Registration/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/UserView/UserView.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/UserView/UserView.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/UserView/components/UserProfile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/UserView/components/UserProfile/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

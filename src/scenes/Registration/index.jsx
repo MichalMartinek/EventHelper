@@ -20,6 +20,7 @@ const defaultUser = {
     last_name: '',
     age: null,
     gender: null,
+    birthday: null,
     city: '',
     email: '',
     phone: '',
@@ -82,8 +83,6 @@ class Registration extends React.Component {
             });
             return;
         }
-
-        const profile = this.state.active === 'user' ? users : teams;
 
         if (this.state.password === this.state.password_again) {
             this.setState({
