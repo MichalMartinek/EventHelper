@@ -21,6 +21,8 @@ class Login extends React.Component {
 
         this.state = {
             email: '',
+            emailError: '',
+            passwordError: '',
             password: '',
             active: 'user',
         };
@@ -46,9 +48,19 @@ class Login extends React.Component {
     };
 
     handleLogin = (e) => {
+        const isEmailValid = this.state.email.length > 3;
+        const isPasswordValid = this.state.password.length > 3;
+        this.setState({
+            emailError: isEmailValid ? '' : 'Váš email je nevalidní',
+            passwordError: isPasswordValid > 3 ? '' : 'Vaše heslo je nevalidní'
+        });
         e.preventDefault();
-        const profile = this.state.active === 'user' ? users : teams;
 
+        if (!isEmailValid || !isPasswordValid) {
+            return;
+        }
+
+        const profile = this.state.active === 'user' ? users : teams;
         profile.forEach((user) => {
             if (this.state.email === user.email && this.state.password === user.password) {
                 localStorage.setItem('loggedUser', JSON.stringify(user));
@@ -76,6 +88,7 @@ class Login extends React.Component {
     }
 
     render() {
+        const { emailError, passwordError } = this.state;
         return (
             <div>
                 <Header title="Přihlásit se" />
@@ -100,6 +113,7 @@ class Login extends React.Component {
                         value={this.state.email}
                         onChange={(e) => this.handleChangeEmail(e)}
                     />
+                    {emailError && <div>{emailError}</div>}
                     <TextField
                         className={style.inputContainer}
                         label="Heslo"
@@ -109,6 +123,7 @@ class Login extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.handleChangePassword(e)}
                     />
+                    {passwordError && <div>{passwordError}</div>}
                     <Button
                         id={style.button_login}
                         variant="contained"
