@@ -11,6 +11,7 @@ import style from '../Login/Login.module.css';
 import * as actions from '../UserView/actions';
 import { users, teams } from '../../database/userData';
 import Header from "../../components/Header";
+import ConfirmationPopup from "../../components/ConfirmationPopUp/ConfirmationPopup";
 
 const defaultUser = {
     id:-1,
@@ -19,6 +20,7 @@ const defaultUser = {
     last_name: '',
     age: null,
     gender: null,
+    birthday: null,
     city: '',
     email: '',
     phone: '',
@@ -37,6 +39,7 @@ class Registration extends React.Component {
             passwordError: '',
             passwordAgainError: '',
             active: 'user',
+            modalOpen: false,
         };
     }
 
@@ -81,23 +84,10 @@ class Registration extends React.Component {
             return;
         }
 
-        const profile = this.state.active === 'user' ? users : teams;
-
         if (this.state.password === this.state.password_again) {
-            defaultUser.id = profile.length + 1;
-            defaultUser.email = this.state.email;
-            defaultUser.password = this.state.password;
-            defaultUser.profile = this.state.active;
-
-            if (this.state.active === 'user') {
-                localStorage.setItem('loggedUser', JSON.stringify(defaultUser));
-                this.props.actions.logIn(defaultUser);
-                this.props.push('/');
-            } else {
-                localStorage.setItem('loggedUser', JSON.stringify(defaultUser));
-                this.props.actions.logIn(defaultUser);
-                this.props.push('/');
-            }
+            this.setState({
+                modalOpen: !this.state.modalOpen,
+            });
         }
 
     };
@@ -114,6 +104,29 @@ class Registration extends React.Component {
             active: profile,
         });
     }
+
+    cancelLogin = () => {
+        this.props.push('/');
+    };
+
+    acceptLogin = () => {
+        const profile = this.state.active === 'user' ? users : teams;
+
+        defaultUser.id = profile.length + 1;
+        defaultUser.email = this.state.email;
+        defaultUser.password = this.state.password;
+        defaultUser.profile = this.state.active;
+
+        if (this.state.active === 'user') {
+            localStorage.setItem('loggedUser', JSON.stringify(defaultUser));
+            this.props.actions.logIn(defaultUser);
+            this.props.push('/');
+        } else {
+            localStorage.setItem('loggedUser', JSON.stringify(defaultUser));
+            this.props.actions.logIn(defaultUser);
+            this.props.push('/');
+        }
+    };
 
     render() {
         const { emailError, passwordError, passwordAgainError } = this.state;
@@ -171,6 +184,12 @@ class Registration extends React.Component {
                         Registrovat se
                     </Button>
                 </div>
+                <ConfirmationPopup
+                    open={this.state.modalOpen}
+                    onCancel={this.cancelLogin}
+                    onSuccess={this.acceptLogin}>
+                    <h3>Chcete být automaticky přihlášení?</h3>
+                </ConfirmationPopup>
             </div>
         );
     }

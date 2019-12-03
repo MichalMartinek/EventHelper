@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="b0b23c8a-b91a-4933-ad96-cae544ab804d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/Registration/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/Registration/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/UserView/UserView.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/UserView/UserView.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenes/UserView/components/UserProfile/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenes/UserView/components/UserProfile/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +26,17 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TCTmSHQVHgTRTZNURbowfm8lLt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Map" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -92,7 +102,23 @@
       <workItem from="1574283399448" duration="61000" />
       <workItem from="1574791633726" duration="2113000" />
       <workItem from="1574891805645" duration="2933000" />
+      <workItem from="1575399630800" duration="701000" />
     </task>
+    <task id="LOCAL-00001" summary="Fix pripominek z druhe iterace">
+      <created>1575197366670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575197366670</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fix pripominek z druhe iterace">
+      <created>1575197375836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575197375836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +136,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix pripominek z druhe iterace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix pripominek z druhe iterace" />
   </component>
   <component name="masterDetails">
     <states>

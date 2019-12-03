@@ -17,7 +17,7 @@ class App extends React.Component {
         if (localStorage) {
             const user = localStorage.getItem('loggedUser');
 
-            if (user) {
+            if (user && !this.props.user.user) {
                 this.props.actions.logIn(JSON.parse(user));
             }
         }
