@@ -15,14 +15,14 @@ import Header from "../../components/Header";
 const defaultUser = {
     id:-1,
     profile: null,
-    first_name: 'Default',
-    last_name: 'Name',
+    first_name: '',
+    last_name: '',
     age: null,
     gender: null,
-    city: 'Nymburk',
-    email: 'default@cvut.cz',
-    phone: '123456789',
-    password: 'test',
+    city: '',
+    email: '',
+    phone: '',
+    password: '',
 }
 
 class Registration extends React.Component {
@@ -33,6 +33,9 @@ class Registration extends React.Component {
             email: '',
             password: '',
             password_again: '',
+            emailError: '',
+            passwordError: '',
+            passwordAgainError: '',
             active: 'user',
         };
     }
@@ -56,7 +59,28 @@ class Registration extends React.Component {
     };
 
     handleRegistration = (e) => {
+        const { email, password_again, password} = this.state;
+        const isEmailValid = email.length > 3;
+        const isPasswordValid = password.length > 3;
+        const isPasswordAgainValid = password_again.length > 3;
+
+        this.setState({
+            emailError: isEmailValid ? '' : 'Váš email je nevalidní',
+            passwordError: isPasswordValid > 3 ? '' : 'Vaše heslo je nevalidní',
+            passwordAgainError: isPasswordAgainValid > 3 ? '' : 'Vaše heslo je nevalidní',
+        });
         e.preventDefault();
+
+        if (!isEmailValid || !isPasswordValid || !isPasswordAgainValid) {
+            return;
+        } else if (password !== password_again) {
+            this.setState({
+                passwordError: 'Vaše hesla nejsou stejná',
+                passwordAgainError: 'Vaše hesla nejsou stejná',
+            });
+            return;
+        }
+
         const profile = this.state.active === 'user' ? users : teams;
 
         if (this.state.password === this.state.password_again) {
@@ -92,6 +116,7 @@ class Registration extends React.Component {
     }
 
     render() {
+        const { emailError, passwordError, passwordAgainError } = this.state;
         return (
             <div>
                 <Header title="Registrovat se" />
@@ -116,6 +141,7 @@ class Registration extends React.Component {
                         value={this.state.email}
                         onChange={(e) => this.handleChangeEmail(e)}
                     />
+                    {emailError && <div>{emailError}</div>}
                     <TextField
                         className={style.inputContainer}
                         label="Heslo"
@@ -125,6 +151,7 @@ class Registration extends React.Component {
                         value={this.state.password}
                         onChange={(e) => this.handleChangePassword(e)}
                     />
+                    {passwordError && <div>{passwordError}</div>}
                     <TextField
                         className={style.inputContainer}
                         label="Heslo znovu"
@@ -134,6 +161,7 @@ class Registration extends React.Component {
                         value={this.state.password_again}
                         onChange={(e) => this.handleChangePasswordAgain(e)}
                     />
+                    {passwordAgainError && <div>{passwordAgainError}</div>}
                     <Button
                         id={style.button_login}
                         variant="contained"
